@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://c83bmlg2or80g"]
+
+[ext_resource type="Script" uid="uid://deo3kdn4urrxp" path="res://scripts/winzone.gd" id="1_v2csi"]
+[ext_resource type="PackedScene" uid="uid://cyliv3gtmo7le" path="res://scenes/win.tscn" id="2_77rf0"]
+
+[node name="winzone" type="Area2D"]
+script = ExtResource("1_v2csi")
+
+[node name="win" parent="." instance=ExtResource("2_77rf0")]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

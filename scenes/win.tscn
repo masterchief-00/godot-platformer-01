@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cyliv3gtmo7le"]
+
+[ext_resource type="AudioStream" uid="uid://dabhvhs2aignq" path="res://assets/win.wav" id="1_r4oei"]
+
+[node name="win" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_r4oei")
+bus = &"FX"
